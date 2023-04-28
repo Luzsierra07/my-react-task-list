@@ -1,0 +1,110 @@
+body {
+  padding: 3px;
+  display: grid;
+  justify-content:center;
+  background-color: rgb(247, 193, 249); 
+}
+
+.header {
+  color: #67055a;
+  border: 3px solid #c41dab;
+  width: 1340px;
+}
+
+.target {
+  width: 220px;
+  height: 210px;
+  border: 2px solid #c41dab;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  background-color: white;
+  border-bottom-left-radius: 30%;
+  position:relative;
+  top: 50px;
+  
+}
+.container {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+  left: 70px;
+}
+
+.btn{
+  position: relative;
+  top: 175px;
+  left: 80px;
+  color: white;
+  background-color: rgb(222, 42, 201);
+  border-radius: 5px;
+}
+
+#cbox {
+  position: relative;
+  top: 54px;
+  right:10px;
+}
+
+h3 {
+  margin-top: 0%;
+  text-align:center;
+  line-height: 0;
+}
+
+h4 {
+  text-align:center;
+  line-height: 0.9;
+  position: relative;
+  top: 0.5px;
+  margin-top: 0px; 
+}
+
+p {
+  text-align:center;
+  line-height: 0.9;
+}
+
+#dte {
+  position: relative;
+  top: 90px; 
+  left: 80px;
+  width: 100px;
+}
+
+.date{
+  position: relative;
+  top: 110px;
+  right: 58px;
+}
+
+select {
+  position: relative;
+  top: 100px;
+  left: 80px;
+}
+
+.ste{
+  position: relative;
+  top: 120px;
+  right: 80px;
+}
+
+.sbt{
+  position: relative;
+  top: 100px;
+  width: 300px;
+  height: 30px;
+  color: white;
+  font-size:medium;
+  background-color: rgb(222, 42, 201);
+  border-radius: 10px;
+}
+h2 {
+  position: relative;
+  top: 92px;
+  color: #67055a;
+}
+
+
+
