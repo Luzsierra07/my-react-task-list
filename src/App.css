@@ -27,13 +27,14 @@ body {
   
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 60%;
   position: relative;
   left: 70px;
 }
 
 .btn{
   position: relative;
-  top: 175px;
+  top: 80px;
   left: 80px;
   color: white;
   background-color: rgb(222, 42, 201);
@@ -42,57 +43,50 @@ body {
 
 #cbox {
   position: relative;
-  top: 54px;
-  right:10px;
+  top: 35px;
+  left: 50px;
 }
 
-h3 {
-  margin-top: 0%;
+.text {
+  color: #67055a;
   text-align:center;
-  line-height: 0;
-}
-
-h4 {
-  text-align:center;
-  line-height: 0.9;
+  line-height: 0.5;
   position: relative;
-  top: 0.5px;
-  margin-top: 0px; 
-}
-
-p {
-  text-align:center;
-  line-height: 0.9;
+  top: 1px; 
 }
 
 #dte {
   position: relative;
-  top: 90px; 
-  left: 80px;
+  top: 19px; 
+  left: 1px;
   width: 100px;
+  color: #67055a;
 }
 
 .date{
   position: relative;
-  top: 110px;
-  right: 58px;
+  top: 20px;
+  right: 10px;
+  color: #67055a;
 }
 
 select {
+  color: #67055a;
   position: relative;
-  top: 100px;
-  left: 80px;
+  top: 30px;
+  left: 65px;
 }
 
 .ste{
+  color: #67055a;
   position: relative;
-  top: 120px;
-  right: 80px;
+  top: 30px;
+  left: 50px;
 }
 
 .sbt{
   position: relative;
-  top: 100px;
+  top: 150px;
   width: 300px;
   height: 30px;
   color: white;
@@ -100,9 +94,10 @@ select {
   background-color: rgb(222, 42, 201);
   border-radius: 10px;
 }
+
 h2 {
   position: relative;
-  top: 92px;
+  top: 150px;
   color: #67055a;
 }
 
