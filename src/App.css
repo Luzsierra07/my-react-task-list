@@ -20,31 +20,25 @@ body {
   background-color: white;
   border-bottom-left-radius: 30%;
   position:relative;
-  top: 50px;
+  top: 150px;
   
 }
 .container {
   
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns:1fr 1fr 1fr 1fr;
   grid-template-rows: 60%;
-  position: relative;
+  position:relative;
   left: 70px;
 }
 
 .btn{
   position: relative;
-  top: 80px;
-  left: 80px;
+  top: 100px;
+  left: 130px;
   color: white;
   background-color: rgb(222, 42, 201);
   border-radius: 5px;
-}
-
-#cbox {
-  position: relative;
-  top: 35px;
-  left: 50px;
 }
 
 .text {
@@ -85,21 +79,37 @@ select {
 }
 
 .sbt{
-  position: relative;
-  top: 150px;
+  position:absolute;
+  top: 400px;
   width: 300px;
   height: 30px;
   color: white;
   font-size:medium;
   background-color: rgb(222, 42, 201);
   border-radius: 10px;
+  
 }
 
-h2 {
-  position: relative;
-  top: 150px;
+.Add {
+  position:absolute;
+  width: 150px;
+  height: 30px;
+  left: 520px;
+  color: white;
+  background-color: rgb(222, 42, 201);
+  border-radius: 10px;
+  margin-top: 60px;
+}
+
+.checked {
   color: #67055a;
+  position: relative;
+  top: 60px;
+  left: 60px;
 }
-
-
+.cbox {
+  position: relative;
+  top: 60px;
+  left: 0px;
+}
 

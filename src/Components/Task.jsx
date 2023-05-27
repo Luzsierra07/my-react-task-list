@@ -1,17 +1,17 @@
-export function Task(props){
-   const {id, title, state,date}=props;
 
+export function Task(props){
+   const {id, title, onDelete}=props;
+
+   const handleDelete = () => {
+    onDelete();
+  };
     return(
         <div>
-            <label>
-            <input type="CheckBox" id="cbox" 
-            value="checkbox"/>
-        </label>
+           
           
-            <h3 className="text">{id}</h3>
+           <h3 className="text">{id}</h3>
             <h4 className="text">{title}</h4>
-
-            <button className="btn btnDelte">
+            <button className="btn btnDelte"onClick={handleDelete}>
                 DELETE
             </button>
            
@@ -22,7 +22,7 @@ export function Task(props){
         <input type="date" name="date" id="dte"/>
         
         <label className="ste"> State: </label>
-           <select>
+           <select name="state" >
             <option>Select state</option>
             <option>Done</option>
             <option>Unrealized</option>
