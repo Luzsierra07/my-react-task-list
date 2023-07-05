@@ -112,4 +112,52 @@ select {
   top: 60px;
   left: 0px;
 }
+.help-text{
+  color: red;
+}
 
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-container label {
+  display: block;
+  color: #67055a;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+.form-container textarea {
+  resize: vertical;
+}
+
+.form-container .help-text {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+.form-container button[type="submit"] {
+  background-color: rgb(222, 42, 201);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border:none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: rgb(222, 42, 201);
+}

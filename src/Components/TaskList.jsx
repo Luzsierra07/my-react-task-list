@@ -1,12 +1,19 @@
 import { useState, useEffect } from "react";
 import Task from "./Task";
 import useTaskManagement from "./createhook";
+import TaskForm from "../TaskForm"; 
 
 
 
 const TaskList = () => {
   const { tasks, createTask, deleteTask, updateTask } = useTaskManagement();
   const [selectedTasks, setSelectedTasks] = useState([]);
+  const [showForm, setShowForm] = useState (false);
+
+  const handleAddTask = (newTask) => {
+    createTask(newTask);
+    setShowForm(false); // ocultar el formulario después de agregar la tarea
+  };
 
   const handleClick = () => {
     const newTask = {
@@ -47,6 +54,10 @@ const TaskList = () => {
 
   return (
     <>
+    {showForm ? (
+      <TaskForm onAddTask={handleAddTask}/>
+    ): (
+    <>
       <button
         type="button"
         id="button2"
@@ -55,9 +66,11 @@ const TaskList = () => {
       >
         Selected tasks
       </button>
-      <button className="Add" onClick={handleClick}>
+      <button className="Add" onClick={() => setShowForm(true)}>
         Add new task
       </button>
+      </>
+     )}
       {tasks.map((task, index) => (
         <div key={index}>
           <div className="target">
