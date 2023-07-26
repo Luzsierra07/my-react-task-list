@@ -1,16 +1,24 @@
 
 export function Task(props){
-   const {id, title, onDelete}=props;
+   const {id, title, onDelete, description, onDateChange, onStateChange, checked}=props;
 
    const handleDelete = () => {
-    onDelete();
+    onDelete(id);
   };
+
+  const handleDateChange = (event) => {
+    onDateChange(event);
+  };
+
+  const handleStateChange = (event) => {
+    onStateChange(event);
+  };
+
     return(
         <div>
            
-          
-           <h3 className="text">{id}</h3>
-            <h4 className="text">{title}</h4>
+            <h4  className={`text ${checked ? 'checked-title' : ''}`}>{title}</h4>
+            {description && <p>{description}</p>} {/* Mostrar la descripción si existe */}
             <button className="btn btnDelte"onClick={handleDelete}>
                 DELETE
             </button>
@@ -19,10 +27,10 @@ export function Task(props){
 
         <label className="date">
         Date:  </label>
-        <input type="date" name="date" id="dte"/>
+        <input type="date" name="date" id="dte" onChange={handleDateChange}/>
         
         <label className="ste"> State: </label>
-           <select name="state" >
+           <select name="state" onChange={handleStateChange} >
             <option>Select state</option>
             <option>Done</option>
             <option>Unrealized</option>

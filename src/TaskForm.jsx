@@ -41,7 +41,7 @@ return (
             onChange={(e) => setDescription(e.target.value)}
             placeholder="Optional"
             />
-            <p className="help-text"> This field is optional.</p>
+            
         </div>
         <button type="submit">Add Task</button>
     </form>
