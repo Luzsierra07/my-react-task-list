@@ -36,6 +36,7 @@ return (
         <div>
             <label htmlFor="description">Description:</label>
             <textarea
+            type="text"
             id="description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}

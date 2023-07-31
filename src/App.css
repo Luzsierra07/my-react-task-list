@@ -1,14 +1,22 @@
+html{
+  background-color: rgb(247, 193, 249);
+}
 body {
   padding: 3px;
   display: grid;
   justify-content:center;
-  background-color: rgb(247, 193, 249); 
+  background-color: rgb(247, 193, 249);
+
+  
+
 }
 
 .header {
   color: #67055a;
   border: 3px solid #c41dab;
   width: 1340px;
+  right: 100px;
+  justify-content:center;
 }
 
 .target {
@@ -17,11 +25,10 @@ body {
   border: 2px solid #c41dab;
   border-radius: 20px;
   margin-bottom: 5px;
-  background-color: white;
+  background-color: rgb(250, 219, 243);
   border-bottom-left-radius: 30%;
   position:relative;
-  top: 150px;
-  
+  top: 270px;  
 }
 .container {
   
@@ -30,11 +37,13 @@ body {
   grid-template-rows: 60%;
   position:relative;
   left: 70px;
+  min-width: 100vh;
+  width: 100vw;
 }
 
 .btn{
-  position: relative;
-  top: 100px;
+  position: absolute;
+  top: 165px;
   left: 130px;
   color: white;
   background-color: rgb(222, 42, 201);
@@ -46,7 +55,8 @@ body {
   text-align:center;
   line-height: 0.5;
   position: relative;
-  top: 1px; 
+  top: 20px; 
+  font-weight: bold;
   
 }
 
@@ -61,22 +71,22 @@ body {
 .date{
   position: relative;
   top: 20px;
-  right: 10px;
+  right: 20px;
   color: #67055a;
 }
 
 select {
   color: #67055a;
-  position: relative;
-  top: 30px;
-  left: 65px;
+  position: absolute;
+  top: 120px;
+  right: 25px;
 }
 
 .ste{
   color: #67055a;
-  position: relative;
-  top: 30px;
-  left: 50px;
+  position: absolute;
+  top: 120px;
+  right:150px;
 }
 
 .Add {
@@ -87,20 +97,20 @@ select {
   color: white;
   background-color: rgb(222, 42, 201);
   border-radius: 10px;
-  margin-top: 60px;
+  margin-top: 190px;
 }
 
 .checked {
   color: #67055a;
-  position: relative;
-  top: 60px;
+  position: absolute;
+  top: 165px;
   left: 60px;
   
 }
 .cbox {
-  position: relative;
-  top: 60px;
-  left: 0px;
+  position: absolute;
+  top: 170px;
+  left: 40px;
   vertical-align: middle;
 }
 .help-text{
@@ -110,6 +120,8 @@ select {
 .form-container {
   max-width: 400px;
   margin: 0 auto;
+  position: absolute;
+  left: 5px;
 }
 
 .form-container label {
@@ -128,10 +140,12 @@ select {
   border-bottom: 1px solid #ccc;
   border-radius: 10px;
   outline: none;
+  
 }
 
 .form-container textarea {
   resize: vertical;
+  
 }
 
 .form-container .help-text {
@@ -156,5 +170,9 @@ select {
 .checked-title {
   text-decoration: line-through;
   vertical-align: top;
-  
+}
+.description{
+  position: relative;
+  top: 30px;
+  text-align: center;
 }

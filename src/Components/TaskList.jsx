@@ -25,16 +25,6 @@ const TaskList = () => {
     createTask(task);
     setShowForm(false); // ocultar el formulario después de agregar la tarea
   };
-
-  const handleClick = () => {
-    const newTask = {
-      id: "",
-      title: "Make project React 1",
-      state: true,
-      date: "May 30, 2023",
-    };
-    createTask(newTask);
-  };
  
   const handleDeleteTask = (taskId) => {
     deleteTask(taskId);
